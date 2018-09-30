@@ -1,3 +1,28 @@
-# Introduction-to-Large-scale-cluster-management-system
+# Introduction to Large scale cluster management-system
 
-Technical reports about Borg(Google), Omega(Google), Apollo(Microsoft), Sigma(Alibaba)
+Technical reports about Borg(Google), Omega(Google), Apollo(Microsoft) and Sigma(Alibaba).
+
+## Sigma
+
+### 特点
+Sigma是阿里巴巴全集团范围的Pouch容器调度系统，阿里全网所有机房在线服务管控的核心角色。2017年Sigma第一次正式参与双11，在双11期间成功撑了全集团所有容器（交易线中间件、数据库、告等多业务）的调配，使双11IT成本降低50%。
+
++ 线上线下混部
++ 复杂约束下的批量调度优化
++ 混合云+弹性
+
+### 优劣
+#### 优点
++ 灵活可配置的调度策略
+   + 支持多样化的应用场景
+   + 业务团队开发出新的策略，可立即配置生效，不需要代码发布
++ 批量优化
+   + Scheduling optimization module
++ 大规模快速建站
+#### 缺点
++ 应用间干扰
++ 异构计算需要优化
+
+### 点评
+在过去，阿里各个部门资源池相互独立，存在多套调度系统，资源分配不均，资源利用率较低。Sigma调度与集群管理系统应运而生。此后经历不断开发，最关键的应该是sigma与fuxi系统形成混部架构，这使CPU的日均利用率从10%提升到了40+%。
+这样的一个调度与集群管理系统能够使工作所需的硬件大大减少，节省可观的开销，也避免频繁、大量地增减硬件。从上述提到的几个优点来看，这套庞大的系统也同时考虑到了易用性，能够热配置、一键建站。阿里依靠这套系统，能够应付双11庞大的访问量，足见其强大。
