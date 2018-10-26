@@ -1,5 +1,4 @@
 ## 516030910273
-# Requirements
 ## Vendors or types or technologies
 ### Features
 * Ceph delivers unified storage, supporting File, Block and Object. 
