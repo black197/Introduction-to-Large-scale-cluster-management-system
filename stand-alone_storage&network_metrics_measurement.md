@@ -23,11 +23,19 @@ Metadata Update Latency, Metadata Read Latency, Metadata Scaling
 
 1) 根据硬盘品牌和型号查询厂商所给数据。
 
+![avatar](https://github.com/black197/Introduction-to-Large-scale-cluster-management-system/blob/milky/pics/QQ%E6%88%AA%E5%9B%BE20181121174622.png?raw=true)
+
 以TOSHIBA DT01ACA200为例，厂商官网和手册提供了尺寸、接口、容量、缓存大小、转速、最大传输速度、功率、重量等参数。
 
 详见：https://toshiba-semicon-storage.com/cn/product/storage-products/client-hdd/dt01acaxxx.html
 
 2) 使用测试软件测试硬盘在不同种类任务下的性能。
+
+![avatar](https://github.com/black197/Introduction-to-Large-scale-cluster-management-system/blob/milky/pics/as-ssd-bench%20KXG50ZNV256G%20NVM%202018.11.21%2017-31-04.png?raw=true)
+
+![avatar](https://github.com/black197/Introduction-to-Large-scale-cluster-management-system/blob/milky/pics/Untitled.jpg?raw=true)
+
+![avatar](https://github.com/black197/Introduction-to-Large-scale-cluster-management-system/blob/milky/pics/QQ%E6%88%AA%E5%9B%BE20181121174622.png?raw=true)
 
 将读写的数据段的长短和数据位置的连续或随机作为变量组合成不同情况下的测试，模拟的是不同的常见情况。
 
@@ -49,9 +57,13 @@ bit rate, bandwidth, throughput, latency/delay, RTT, utilization
 
 1) 根据网卡和路由器品牌和型号查询厂商所给数据。
 
+![avatar](https://github.com/black197/Introduction-to-Large-scale-cluster-management-system/blob/milky/pics/QQ%E6%88%AA%E5%9B%BE20181121182727.png?raw=true)
+
 以Killer™ Wireless-AC 1535为例，厂商官网和手册提供了WLAN频率带宽、IEEE无线上网标准等数据。
 
 详见：https://www.killernetworking.com/products/killer-wireless-ac-1535/#1538447688051-e5859717-920b
+
+![avatar](https://github.com/black197/Introduction-to-Large-scale-cluster-management-system/blob/milky/pics/QQ%E6%88%AA%E5%9B%BE20181121183234.png?raw=true)
 
 以华为WS550为例，厂商官网和手册提供了无线速率、无线频段、无线协议、无线安全、天线等数据。
 
@@ -65,6 +77,8 @@ iperf -s -p [server-port] -i 1
 
 iperf -c [server-ip] -p [server-port] -i 1 -t [second(s)] -w 20K
 
+![avatar](https://github.com/black197/Introduction-to-Large-scale-cluster-management-system/blob/milky/pics/QQ%E6%88%AA%E5%9B%BE20181121210950.png?raw=true)
+
 可以模拟单线程客户端与单线程服务器之间的TCP网络，并计算出规定时间内的平均带宽。
 
 ii. 使用iperf工具测试单线程UDP
@@ -74,6 +88,8 @@ ii. 使用iperf工具测试单线程UDP
 iperf -s -u -p [server-port] -i 1
 
 iperf -c [server-ip] -p [server-port] -u -i 1 -t [second(s)]
+
+![avatar](https://github.com/black197/Introduction-to-Large-scale-cluster-management-system/blob/milky/pics/QQ%E6%88%AA%E5%9B%BE20181121215203.png?raw=true)
 
 可以模拟单线程客户端与单线程服务器之间的UDP网络，并计算出规定时间内的平均带宽。
 
