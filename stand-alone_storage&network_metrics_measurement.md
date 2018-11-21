@@ -35,7 +35,7 @@ Metadata Update Latency, Metadata Read Latency, Metadata Scaling
 
 ![avatar](https://github.com/black197/Introduction-to-Large-scale-cluster-management-system/blob/milky/pics/Untitled.jpg?raw=true)
 
-![avatar](https://github.com/black197/Introduction-to-Large-scale-cluster-management-system/blob/milky/pics/QQ%E6%88%AA%E5%9B%BE20181121174622.png?raw=true)
+![avatar](https://github.com/black197/Introduction-to-Large-scale-cluster-management-system/blob/milky/pics/21-______-2018_18-17.png?raw=true)
 
 将读写的数据段的长短和数据位置的连续或随机作为变量组合成不同情况下的测试，模拟的是不同的常见情况。
 
