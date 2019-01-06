@@ -1,0 +1,33 @@
+---
+ 
+apiVersion: extensions/v1beta1
+ 
+kind: Deployment
+ 
+metadata:
+ 
+  name: front
+ 
+spec:
+ 
+  replicas: 2
+ 
+  template:
+ 
+    metadata:
+ 
+      labels:
+ 
+        app: front
+ 
+    spec:
+ 
+      containers:
+ 
+        - name: front
+ 
+          image: edithwu/kubernetes:latest
+ 
+          ports:
+ 
+            - containerPort: 8080
