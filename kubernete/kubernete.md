@@ -36,6 +36,10 @@ tomcat       NodePort    10.98.208.200   <none>        8080:32143/TCP   4d5h
 **数据库：**
 212.64.66.254:3306  
 
+![avatar](https://raw.githubusercontent.com/black197/Introduction-to-Large-scale-cluster-management-system/milky/pics/QQ%E5%9B%BE%E7%89%8720190106202918.png)  
+
+![avatar](https://raw.githubusercontent.com/black197/Introduction-to-Large-scale-cluster-management-system/milky/pics/QQ%E5%9B%BE%E7%89%8720190106202916.png)  
+
 ## Docker Hub镜像
 **前端：**
 edithwu/kubernetes:ebook_back  
