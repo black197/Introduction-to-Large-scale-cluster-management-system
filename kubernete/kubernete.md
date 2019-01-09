@@ -60,6 +60,8 @@ http://111.231.137.229:8001/api/v1/namespaces/kube-system/services/https:kuberne
 只能通过localhost访问，而kubernete的master结点位于远端。  
 否则需要给云主机配置SSL证书，从本地通过Https协议访问。  
 
+![avatar](https://raw.githubusercontent.com/black197/Introduction-to-Large-scale-cluster-management-system/milky/pics/QQ%E6%88%AA%E5%9B%BE20190109141633.jpg)
+
 ## 参考教程
 **kubernete集群搭建：**
 http://www.imooc.com/article/266932  
