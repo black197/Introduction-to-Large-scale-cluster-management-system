@@ -52,5 +52,19 @@ edithwu/kubernetes:latest
 **后端：**
 见deployment_back、service_back.yaml  
 
+## Dashboard
+**地址：**  
+http://111.231.137.229:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#!/login  
+
+**遇到的问题：**  
+只能通过localhost访问，而kubernete的master结点位于远端。  
+否则需要给云主机配置SSL证书，从本地通过Https协议访问。  
+
 ## 参考教程
+**kubernete集群搭建：**
 http://www.imooc.com/article/266932  
+
+
+**腾讯云Https实现教程：**  
+https://cloud.tencent.com/document/product/400/6813  
+
