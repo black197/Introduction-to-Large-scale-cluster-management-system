@@ -9,5 +9,3 @@ Technical reports about Borg(Google), Omega(Google), Apollo(Microsoft) and Sigma
 张宇航 516030910273 Apollo
 
 叶东諴 516030910020 Sigma
-
-
